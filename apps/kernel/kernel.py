@@ -1,7 +1,7 @@
 from termcolor import colored
 from apps.banner.banner_v1 import Banner
 from utils.arg_validator import ArgValidator
-
+from controllers.controllers import Controllers
 class Kernel:
     def __init__(self):
         Banner()
@@ -11,3 +11,5 @@ class Kernel:
 
         file = gd['file']
         root_check = gd['root']
+
+        Controllers(file,root_check)

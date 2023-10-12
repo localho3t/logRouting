@@ -37,7 +37,7 @@ class ArgValidator:
                     else:
                         data = {
                             'file': log_file,
-                            'root': root_argv
+                            'root': root_argv.split(',')
                         }
                         return data
                 else:
