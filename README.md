@@ -8,7 +8,7 @@ This is a portable project capable of analyzing logs at three levels. You can pr
 git clone https://github.com/localho3t/logRouting.git
 cd logRouting
 pip install -r requirements.txt
-python3 main.py
+python3 main.py -h
 ```
 
 ## License
