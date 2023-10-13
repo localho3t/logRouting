@@ -32,7 +32,7 @@ class FirstLayerAnalyze:
             self.method_calc.set_method(Method)
             self.scc.set_status_code(Status)
 
-        self.ip_calc.get_ips()
-        self.method_calc.get_method()
-        self.scc.get_status_code()
+        self.ip_calc.export_ips()
+        self.method_calc.export_method()
+        self.scc.export_status_code()
 

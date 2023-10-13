@@ -10,7 +10,7 @@ class IPCalculator:
         else:
             self._ips[ip] = {"count": 1}
 
-    def get_ips(self):
+    def export_ips(self):
         table = PrettyTable()
         table.field_names = ["ip","count"]
 

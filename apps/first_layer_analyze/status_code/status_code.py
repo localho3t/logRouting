@@ -12,7 +12,7 @@ class StatusCodeCalculator:
         else:
             self._status_code[ip] = {"count": 1}
 
-    def get_status_code(self):
+    def export_status_code(self):
         table = PrettyTable()
         table.field_names = ["ip", "count"]
 

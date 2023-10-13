@@ -3,7 +3,6 @@ import os
 from termcolor import colored
 import re
 class ArgValidator:
-    # data = {}
     def validate(self):
         regex_pattern = r'\[.*\]'
         log_file = ""
@@ -13,7 +12,6 @@ class ArgValidator:
             print(
                 colored("[^] python3 main.py -f [log file] -r [/,/login,/dashboard]", 'yellow'))
             exit()
-        # print(len(sys.argv))
         if len(sys.argv) !=  5:
             print(colored("[!] Arg Error ... [-h]",'red'))
             exit()

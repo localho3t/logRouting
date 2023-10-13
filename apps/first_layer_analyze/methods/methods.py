@@ -12,7 +12,7 @@ class MethodCalculator:
         else:
             self._method[method] = {"count": 1}
 
-    def get_method(self):
+    def export_method(self):
         table = PrettyTable()
         table.field_names = ["method", "count"]
 
