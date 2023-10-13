@@ -43,13 +43,12 @@ class SecondLayerAnalyze:
         user_results = {}
 
         for user, paths in log_dict.items():
-            user_results[user] = {}  # ایجاد یک دیکشنری برای نتایج هر کاربر
+            user_results[user] = {}
             all_paths_matched = all(path in paths for path in self.root)
             user_results[user]["all_matched"] = all_paths_matched
 
         for user, results in user_results.items():
             if results["all_matched"]:
-                # message = f"[*] User {user}: All paths matched."
-                message = f"[*] User <IP SECRET> : All paths matched."
+                message = f"[*] User {user}: All paths matched."
                 colored_message = colored(message, 'green')
                 print(colored_message)
